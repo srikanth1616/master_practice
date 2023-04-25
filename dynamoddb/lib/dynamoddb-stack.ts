@@ -9,7 +9,7 @@ export class DynamoddbStack extends cdk.Stack {
     // The code that defines your stack goes here
     // dynamodb table
     const table = new dynamodb.Table(this, 'Table', {
-  partitionKey: { name: 'custidsrikanthreddybodd', type: dynamodb.AttributeType.NUMBER },
+  partitionKey: { name: 'customerid', type: dynamodb.AttributeType.NUMBER },
 });
     // example resource
     // const queue = new sqs.Queue(this, 'DynamoddbQueue', {
